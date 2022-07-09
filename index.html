@@ -66,6 +66,58 @@
                 <use href="./images/sprite.svg#cros"></use>
               </svg>
             </button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form" name="modal-form" autocomplete="on">
+              <label class="modal-label">
+                <span class="modal-input-desc">Имя</span>
+                <input class="modal-input" type="text" name="name" required />
+                <svg class="modal-input-icon">
+                  <use href="./images/sprite.svg#person"></use>
+                </svg>
+              </label>
+              <label class="modal-label">
+                <span class="modal-input-desc">Телефон</span>
+                <input class="modal-input" type="tel" name="phone" required />
+                <svg class="modal-input-icon">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+              </label>
+              <label class="modal-label">
+                <span class="modal-input-desc">Почта</span>
+                <input class="modal-input" type="email" name="email" />
+                <svg class="modal-input-icon">
+                  <use href="./images/sprite.svg#email"></use>
+                </svg>
+              </label>
+              <label class="modal-label-textarea">
+                <span class="modal-input-desc">Комментарий</span>
+                <textarea
+                  class="modal-textarea"
+                  name="coments"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+              <label class="checkbox-label">
+                <input
+                  class="checkbox visually-hidden"
+                  type="checkbox"
+                  name="agreement"
+                  value="agreement"
+                  required
+                />
+                <span class="castom-checkbox">
+                  <svg class="checkbox-icon">
+                    <use class="check-on" href="./images/sprite.svg#check"></use>
+                    <use class="check-off" href="./images/sprite.svg#check-black"></use>
+                  </svg>
+                </span>
+                <span class="agreement-text">
+                  <span>Соглашаюсь с рассылкой и принимаю</span>
+                  <a href="#">Условия договора</a>
+                </span>
+              </label>
+              <button class="button send-btn" type="submit">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
@@ -549,6 +601,20 @@
             </li>
           </ul>
         </div>
+        <form class="mailing-form" name="mailing-form">
+          <p><strong class="strong">Подпишитесь на рассылку</strong></p>
+          <div class="mailing-blok">
+            <label class="mailing-label">
+              <input class="mailing-input" type="email" name="mailing" placeholder="E-mail" />
+            </label>
+            <button class="mailing-button" type="submit">
+              <span class="mailing-button-desc">Подписаться</span>
+              <svg class="mailing-button-icon">
+                <use href="./images/sprite.svg#send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
 

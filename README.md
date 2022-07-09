@@ -1,3 +1,3 @@
-# goit-markup-hw-05
+# goit-markup-hw-06
 
-Repository for HW 5 FSon 58
+Repository for HW 6 FSon 58
