@@ -475,6 +475,10 @@ img {
   opacity: 0;
 }
 
+.checkbox:focus + .castom-checkbox {
+  outline: rgb(16, 16, 16) solid 1px;
+}
+
 .agreement-text {
   display: inline-block;
   line-height: 1.71;
