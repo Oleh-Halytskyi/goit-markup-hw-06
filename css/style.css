@@ -31,6 +31,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -301,7 +308,7 @@ img {
   transform: translate(50%, -50%);
 
   min-width: 528px;
-  min-height: 581px;
+  height: 581px;
   padding: 40px;
 
   background-color: var(--background-foto);
@@ -345,7 +352,7 @@ img {
 }
 
 .modal-title {
-  margin: 0 0 30px 0;
+  margin: 0 0 12px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
@@ -394,16 +401,19 @@ img {
 
   fill: var(--title-color);
 
-  transition: border-color var(--time) var(--cubic);
+  transition: fill var(--time) var(--cubic);
 }
 
-.modal-input:focus,
-.modal-textarea:focus {
+.modal-input:focus-within,
+.modal-textarea:focus-within,
+.modal-input:hover,
+.modal-textarea:hover {
   border-color: var(--accent-color);
   outline: transparent;
 }
 
-.modal-input:focus + .modal-input-icon {
+.modal-input:focus-within + .modal-input-icon,
+.modal-input:hover + .modal-input-icon {
   fill: var(--accent-color);
 }
 
@@ -426,6 +436,8 @@ img {
   border-radius: 4px;
 
   resize: none;
+
+  transition: border-color var(--time) var(--cubic);
 }
 
 .checkbox-label {
